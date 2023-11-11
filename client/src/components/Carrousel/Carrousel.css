@@ -1,0 +1,39 @@
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  flex: 0 0 auto;
+}
+
+.carousel-item.active {
+  opacity: 1;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
