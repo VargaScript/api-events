@@ -49,12 +49,13 @@ const EventContainer = () => {
     setTimeout(() => {
       setIsExtendedVisible(true);
       setIsAnimating(false);
-    }, 300);
+    }, 500);
   };
 
   const filteredEvents = events.filter((event) =>
     event.location.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
   return (
     <div>
       <section className="bg-[var(--sky-blue)] py-8">
